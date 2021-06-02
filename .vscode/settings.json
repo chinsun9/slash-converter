@@ -1,0 +1,11 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+
+  // 프리티어 확장도구로 인한 자동 포맷팅 비활성화
+  "editor.formatOnSave": false,
+
+  // 파일 저장시 자동으로 lint 및 포맷팅
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
