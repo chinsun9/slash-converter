@@ -11,7 +11,6 @@ const Style = styled.div`
   padding: 0 2rem;
   margin: auto;
   grid-template-rows: 1fr auto;
-  background-color: ${(props) => props.theme.color.bgPrimary};
 
   .input,
   .result {
