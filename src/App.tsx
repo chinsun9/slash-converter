@@ -8,6 +8,7 @@ const Style = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  color: ${(props) => props.theme.color.textPrimary};
 `;
 
 function App() {

@@ -6,11 +6,12 @@ const Style = styled.div`
   display: grid;
   place-items: center;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   max-width: 1000px;
   padding: 0 2rem;
   margin: auto;
   grid-template-rows: 1fr auto;
+  background-color: ${(props) => props.theme.color.bgPrimary};
 
   .input,
   .result {
