@@ -25,13 +25,29 @@ type Props = {
   title: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  copyValue?: boolean;
 };
 
-function InputText({ title, onChange, value }: Props) {
+function InputText({ title, onChange, value, copyValue = false }: Props) {
+  const onClickHandler = (
+    e: React.MouseEvent<HTMLInputElement, MouseEvent>
+  ) => {
+    if (!copyValue) {
+      return;
+    }
+    e.currentTarget.select();
+    document.execCommand('copy');
+  };
+
   return (
     <Style>
       {title}
-      <input type="text" value={value} onChange={onChange} />
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        onClick={onClickHandler}
+      />
     </Style>
   );
 }

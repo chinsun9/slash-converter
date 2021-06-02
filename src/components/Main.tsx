@@ -75,16 +75,19 @@ function Main() {
           title="type /"
           value={convertSlash('/', userInput)}
           onChange={() => null}
+          copyValue
         />
         <InputText
           title="type \"
           value={convertSlash('\\', userInput)}
           onChange={() => null}
+          copyValue
         />
         <InputText
           title="type \\"
           value={convertSlash('\\\\', userInput)}
           onChange={() => null}
+          copyValue
         />
       </div>
     </Style>
