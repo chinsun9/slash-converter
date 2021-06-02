@@ -1,49 +1,12 @@
-# my react ts template
+# Slash Converter
 
-## yarn add ...
+- 슬래시 변환기
 
-### react ts + eslint + prettier
+## 기능
 
-```
-npx create-react-app . --template typescript
-
-npx install-peerdeps --dev eslint-config-airbnb
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier eslint-config-prettier eslint-plugin-prettier
-
-yarn remove eslint
-```
-
-### css (sass or styled)
-
-```bash
-# sass
-yarn add node-sass
-yarn add prettier-plugin-style-order
-
-# or
-
-# styled
-yarn add @emotion/react @emotion/styled
-```
-
-### useful packages
-
-```bash
-# time
-yarn add dayjs
-
-# routing
-yarn add react-router-dom
-
-# head edit
-yarn add react-helmet-async
-
-# icon
-yarn add @material-ui/core @material-ui/icons
-
-# chart
-yarn add react-chartjs-2 chart.js
-
-# table
-yarn add react-table react-table-sticky
-```
+- 경로 문자열을 입력하면 `/`, `\`, `\\` 3가지 타입으로 출력한다
+- input : C:\git\slash-converter\README.md
+- output :
+  - `C:/git/slash-converter/README.md`
+  - `C:\git\slash-converter\README.md`
+  - `C:\\git\\slash-converter\\README.md`
