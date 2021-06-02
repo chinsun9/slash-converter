@@ -22,8 +22,16 @@ const Style = styled.div`
 function Footer() {
   return (
     <Style>
-      <a href="https://github.com/chinsun9">@chinsun9</a>
-      <a href="https://github.com/chinsun9/slash-converter">source code</a>{' '}
+      <a href="https://github.com/chinsun9" target="_blank" rel="noreferrer">
+        @chinsun9
+      </a>
+      <a
+        href="https://github.com/chinsun9/slash-converter"
+        target="_blank"
+        rel="noreferrer"
+      >
+        source code
+      </a>
     </Style>
   );
 }
