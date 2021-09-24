@@ -50,9 +50,7 @@ function Main() {
     const resultBox = resultRef.current;
 
     if (containerBox && resultBox) {
-      resultBox.style.height = `${
-        userInputLength ? containerBox.offsetHeight / 2 : 0
-      }px`;
+      resultBox.style.height = `${userInputLength ? 50 : 0}vh`;
     }
   }, [userInput]);
 
