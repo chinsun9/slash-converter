@@ -18,6 +18,10 @@ const Style = styled.div`
     width: 100%;
   }
 
+  .input input:focus {
+    border-color: ${(props) => props.theme.color.textLink};
+  }
+
   .result {
     display: flex;
     flex-wrap: wrap;
