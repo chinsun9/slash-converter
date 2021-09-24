@@ -56,6 +56,14 @@ function Main() {
     }
   }, [userInput]);
 
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    containerRef.current
+      .querySelector<HTMLInputElement>('.input input')
+      ?.focus();
+  }, []);
+
   return (
     <Style ref={containerRef}>
       <div className="input">
