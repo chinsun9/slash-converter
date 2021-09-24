@@ -36,7 +36,7 @@ function InputText({ title, onChange, value, copyValue = false }: Props) {
       return;
     }
     e.currentTarget.select();
-    document.execCommand('copy');
+    navigator.clipboard.writeText(value);
   };
 
   return (
