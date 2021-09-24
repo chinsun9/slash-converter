@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import InputText from './InputText';
+import { convertSlash } from '../utils/convertSlash';
 
 const Style = styled.div`
   display: grid;
@@ -33,10 +34,6 @@ const Style = styled.div`
     }
   }
 `;
-
-const convertSlash = (type: string, origin: string) => {
-  return origin.replace(/[/\\]+/g, type);
-};
 
 function Main() {
   const containerRef = useRef<HTMLDivElement>(null);
