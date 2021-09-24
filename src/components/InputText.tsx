@@ -10,13 +10,12 @@ const Style = styled.label`
     place-items: center;
     padding: 1rem 1.6rem;
     outline: none;
-    background-color: none;
+    background-color: transparent;
     border: 1px solid ${(props) => props.theme.color.textSecondary};
     border-radius: 0.4rem;
     width: 100%;
     font-size: 1.4rem;
     margin-top: 10px;
-    background-color: transparent;
     color: ${(props) => props.theme.color.textPrimary};
   }
 `;
