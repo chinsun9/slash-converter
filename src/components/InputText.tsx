@@ -23,11 +23,16 @@ const Style = styled.label`
 type Props = {
   title: string;
   value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   copyValue?: boolean;
 };
 
-function InputText({ title, onChange, value, copyValue = false }: Props) {
+function InputText({
+  title,
+  value,
+  onChange = () => null,
+  copyValue = false,
+}: Props) {
   const onClickHandler = (
     e: React.MouseEvent<HTMLInputElement, MouseEvent>
   ) => {
